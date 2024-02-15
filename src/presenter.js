@@ -3,12 +3,15 @@ import saludar from "./saludador";
 const name = document.querySelector("#user-name");
 const form = document.querySelector("#askName-form");
 const div = document.querySelector("#grettingsName-div");
+const age = document.querySelector("#user-age")
+const genero = document.querySelector("#gender")
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
   const userName = name.value;
-
-  div.innerHTML = "<p> Hola " + saludar(userName) + "</p>";
+  const userAge = parseInt(age.value);
+  const userGenero = genero.value;
+  div.innerHTML = "<p>" + saludar(userName, userAge, userGenero) + "</p>";
 });
 
