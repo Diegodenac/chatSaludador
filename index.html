@@ -1,16 +1,20 @@
 <html>
   <body>
-    <h1>Hola</h1>
+    <h1>ChatBot Saludador</h1>
     <form id="askName-form">
-      <label for="Name">Cual es tu nombre</label>
+      <label for="Name">Cual es tu nombre?/What is your name?</label>
       <input type="name" id="user-name" />
-      <label for="Name">Cual es tu edad</label>
+      <label for="Name">Cual es tu edad?/How old are you?</label>
       <input type="name" id="user-age" />
-      <label for="Name">Genero</label>
+      <label for="Name">Genero/Gender</label>
       <select id="gender" name="gender">
-        <option value="male">Masculino</option>
-        <option value="female">Femenino</option>
-        <option value="other">Otro</option>
+        <option value="male">Masculino/Male</option>
+        <option value="female">Femenino/Female</option>
+        <option value="other">Otro/Other</option>
+      </select>
+      <select id="language" name="language">
+        <option value="EN">English</option>
+        <option value="ES">Español</option>
       </select>
       <input type="submit" value="Enviar" id="name-button" />
     </form>
